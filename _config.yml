@@ -3,8 +3,8 @@ title: Julien Maitrehenry
 tagline: Web developper and devops
 email: julien.maitrehenry@me.com
 description: > # this means to ignore newlines until "baseurl:"
-  Hi, I’m a professional web developer and devops. 
-  I love being create and run application
+  Hi, I’m a professional web developer specialize in DevOps and Agile practices. 
+  I love building cloud system and monitoring it.
 baseurl: "" # the subpath of your site, e.g. /blog/
 #url: "https://www.jmaitrehenry.ca" # the base hostname & protocol for your site
 url: ""
