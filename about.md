@@ -57,13 +57,9 @@ I love building cloud system and monitoring it.
         </div>
     </div>
     <div class="col s4">
-        <span>Docker / swarm / consul</span>
+        <span>Docker / Swarm / Consul</span>
         <div class="progress">
           <div class="determinate" style="width: 60%"></div>
-        </div>
-        <span>AWS</span>
-        <div class="progress">
-          <div class="determinate" style="width: 25%"></div>
         </div>
         <span>Statsd / Influxdb / Grafana</span>
         <div class="progress">
@@ -76,6 +72,32 @@ I love building cloud system and monitoring it.
         <span>Zabbix</span>
         <div class="progress">
           <div class="determinate" style="width: 70%"></div>
+        </div>
+        <span>Vertica</span>
+        <div class="progress">
+          <div class="determinate" style="width: 80%"></div>
+        </div>
+    </div>
+</div>
+
+### Learning
+<div class="row">
+    <div class="col s4">
+        <span>Golang</span>
+        <div class="progress">
+          <div class="determinate" style="width: 35%"></div>
+        </div>
+    </div>
+    <div class="col s4">
+        <span>MongoDB</span>
+        <div class="progress">
+          <div class="determinate" style="width: 30%"></div>
+        </div>
+    </div>
+    <div class="col s4">
+        <span>AWS</span>
+        <div class="progress">
+          <div class="determinate" style="width: 20%"></div>
         </div>
     </div>
 </div>
