@@ -33,6 +33,14 @@
     </li>
     {% endif %} 
 
+    {% if site.theme.social.linkedin %}
+    <li>
+        <a title="{{ site.theme.social.linkedin }} on LinkedIn" 
+            href="https://linkedin.com/in/{{ site.theme.social.linkedin }}" 
+            class="linkedin wc-img-replace" target="_blank">Linkedin</a>
+    </li>
+    {% endif %}
+
     {% if site.theme.social.dribble %}
     <li>
         <a title="{{ site.theme.social.dribble }} on Dribble" 
