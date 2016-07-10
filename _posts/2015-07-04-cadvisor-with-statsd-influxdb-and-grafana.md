@@ -3,7 +3,7 @@ layout: post
 title: "cAdvisor with StatsD, influxdb and Grafana"
 description: ""
 category:
-tags: []
+tags: [docker, cadvisor, monitoring, grafana, statsd]
 permalink: cadvisor-with-statsd-influxdb-and-grafana
 ---
 # Why use cAdvisor with StatsD?
@@ -18,6 +18,7 @@ docker_node.container_name.metric with only one value. Yes, it's not the simples
 Why I love StatsD? Because it use UDP as transport, it aggregate stats before sending its to backend, support many backend like Zabbix and InfluxDB and could easily scale.
 
 # Configuration
+
 ## InfluxDB
 For this blog post, we will keep all default configuration of InfluxDB 0.9. We will create a database and a user for our metrics. I will use the HTTP API, but you can do this directly on the web UI or with the influx command line.
 
