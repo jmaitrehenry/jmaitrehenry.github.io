@@ -2,7 +2,6 @@
 layout: post
 title: How to configure a Jenkins slave to auto connect to Jenkins master on start
 ---
-# How to configure a Jenkins slave to auto connect to Jenkins master on start
 
 ## Context
 

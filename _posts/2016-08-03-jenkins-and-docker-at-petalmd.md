@@ -3,8 +3,6 @@ layout: post
 title: CI / CD stack at PetalMD for web applications
 ---
 
-
-# CI / CD stack at Petalmd for web applications
 ## Context
 At [PetalMD](https://petalmd.com) we build cloud applications for Healthcare professionals. We have a backend running Ruby on Rails (API / admin app) and front-end apps in pure Javascript. All applications have unit/end-to-end tests and can be deployed as needed, typically several times a day.
 
