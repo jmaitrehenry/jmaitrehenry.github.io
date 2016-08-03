@@ -21,7 +21,7 @@ The purpose of the article is to give a quick overview of what we have in place 
 - Each time master builds (usually after a PR is merged), the application should be deployed in production if the build succeeds. If not, a notification should be sent to a Slack channel.
 
 ## CI/CD flow
-![CI/CD flow](../assets/posts/ci_cd_stack.png)
+![CI/CD flow](/assets/posts/ci_cd_stack.png)
 
 ## Tools selection
 ### GitHub
