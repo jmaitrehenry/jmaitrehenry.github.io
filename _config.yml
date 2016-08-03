@@ -3,11 +3,11 @@ title: Julien Maitrehenry
 tagline: Web developper and devops
 email: julien.maitrehenry@me.com
 description: > # this means to ignore newlines until "baseurl:"
-  Hi, I’m a professional web developer specialize in DevOps and Agile practices. 
+  Hi, I’m a professional web developer specialize in DevOps and Agile practices.
   I love building cloud system and monitoring it.
 baseurl: "" # the subpath of your site, e.g. /blog/
 #url: "https://www.jmaitrehenry.ca" # the base hostname & protocol for your site
-url: ""
+url: "http://jmaitrehenry.ca"
 logourl: /assets/images/logo.png # Site logo
 author: "Julien Maitrehenry"
 author_thumbnail: "http://www.gravatar.com/avatar/d1ae7b5fe133a53f8a5b1dc5640e4b76?s=200" # Author avatar
@@ -16,7 +16,7 @@ theme:
   # Color for sidebar bar, links, etc
   highlight_color: "#205081" #205081" # "#272935"
   # Social media links, leave blank to ignore
-  social: 
+  social:
     github: jmaitrehenry
     twitter: jmaitrehenry
     linkedin: jmaitrehenry
