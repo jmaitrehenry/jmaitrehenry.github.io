@@ -8,3 +8,5 @@ gem 'github-pages', versions['github-pages']
 gem 'rake'
 gem 'kramdown'
 gem 'jekyll-paginate'
+gem 'jekyll-compose', group: [:jekyll_plugins]
+gem 'jekyll-sitemap'

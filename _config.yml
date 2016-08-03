@@ -63,3 +63,4 @@ sass:
 
 gems:
   - jekyll-paginate
+  - jekyll-sitemap
