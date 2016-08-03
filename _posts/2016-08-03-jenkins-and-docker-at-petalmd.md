@@ -24,6 +24,7 @@ The purpose of the article is to give a quick overview of what we have in place 
 ![CI/CD flow](/assets/posts/ci_cd_stack.png)
 
 ## Tools selection
+
 ### GitHub
 We previously tried Assembla, GitLab and Github for our versionning part and we now use Github principaly due to all the 3rd party integrations available. The second reason for our choice is the possibility to fork open source libraries we use and send back our changes in few clicks.
 
