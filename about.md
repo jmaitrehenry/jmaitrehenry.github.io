@@ -106,6 +106,3 @@ I love building cloud system and monitoring it.
 
 Say `Hello` at julien.maitrehenry@me.com or find me on
 
----
-
-{% include social.html %}

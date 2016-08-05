@@ -1,10 +1,13 @@
 ---
 layout: post
 title: How to configure a Jenkins slave to auto connect to Jenkins master on start
+date: 2016-08-04 22:33:29.000000000 -05:00
 ---
 
 ## Context
+At [PetalMD](https://petalmd.com) we build cloud applications for Healthcare professionals. We have a backend running Ruby on Rails (API / admin app) and front-end apps in pure Javascript. All applications have unit/end-to-end tests and can be deployed as needed, typically several times a day.
 
+The purpose of the article is to give a quick overview of how 
 
 ## Requirements
 - When Jenkins doesn't have enough workers for running pending jobs, it need to increase the number of slaves.

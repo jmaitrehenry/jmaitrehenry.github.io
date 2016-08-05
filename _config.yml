@@ -1,66 +1,79 @@
-# Site settings
-title: Julien Maitrehenry
-tagline: Web developper and devops
-email: julien.maitrehenry@me.com
-description: > # this means to ignore newlines until "baseurl:"
-  Hi, I’m a professional web developer specialize in DevOps and Agile practices.
-  I love building cloud system and monitoring it.
-baseurl: "" # the subpath of your site, e.g. /blog/
-#url: "https://www.jmaitrehenry.ca" # the base hostname & protocol for your site
-url: "http://jmaitrehenry.ca"
-logourl: /assets/images/logo.png # Site logo
-author: "Julien Maitrehenry"
-author_thumbnail: "http://www.gravatar.com/avatar/d1ae7b5fe133a53f8a5b1dc5640e4b76?s=200" # Author avatar
-# Theme customization - please change from the defaults!
-theme:
-  # Color for sidebar bar, links, etc
-  highlight_color: "#205081" #205081" # "#272935"
-  # Social media links, leave blank to ignore
-  social:
-    github: jmaitrehenry
-    twitter: jmaitrehenry
-    linkedin: jmaitrehenry
+title:            Site Title
+description:      Describe your website here.
+reading_time:     true
+words_per_minute: 200
+# Your site's domain goes here (eg: https://mmistakes.github.io, http://yourdomain.com, etc)
+# When testing locally leave blank or use http://localhost:4000
+url: http://jmaitrehenry.ca
 
-  # Enable share buttons on post footer
-  show_share_buttons: true
+# Owner/author information
+owner:
+  name:           Julien Maitrehenry
+  avatar:         http://www.gravatar.com/avatar/d1ae7b5fe133a53f8a5b1dc5640e4b76?s=200
+  bio:            "Hi, I’m a professional web developer specialize in DevOps and Agile practices. I love building cloud system and monitoring it"
+  email:          julien.maitrehenry@me.com
+  # Social networking links used in footer. Update and remove as you like.
+  twitter: jmaitrehenry
+  github: jmaitrehenry
+  linkedin: jmaitrehenry
 
-  # Show author picure, name and social links on post footer
-  show_author_info: true
+# Background image to be tiled on all pages
+background: /assets/header-bg.jpg
 
-  # Disqus comments manager - shortname
-  disqus_shortname: jmaitrehenry-blog
+# Analytics and webmaster tools stuff goes here
+google_analytics: UA-64642121-1
+google_verify: hmAkvVqWPWFz6ndNRm-2AL4EJw0Op6jsQwwP_IBAmkk
 
-  # Google Analytics/Webmaster key, leave blank to ignore
-  google_analytics_key: "UA-64642121-1"
-  google_webmaster_key: "hmAkvVqWPWFz6ndNRm-2AL4EJw0Op6jsQwwP_IBAmkk"
+# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone:    America/Montreal
+future:      true
+highlighter: rouge
+markdown:    kramdown
+gems:
+  - jekyll-sitemap
+  - jekyll-paginate
+  - jekyll-gist
+  - jekyll-feed
+sass:
+  sass_dir: _sass
+  style: compressed
 
-# Build settings
-markdown: kramdown
+# https://github.com/mojombo/jekyll/wiki/Permalinks
+permalink:   /:categories/:title/
+
+# Amount of post to show on home page
+paginate: 5
 
 kramdown:
   input: GFM
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  enable_coderay: false
 
-# Permalinks
-permalink: pretty
-
-# Pagination config
-paginate: 5
-
-# Files/Folders to be excluded from generated _site folder
-exclude:
-  - CNAME
-  - Gemfile
-  - Rakefile
-  - README.md
-  - .gitignore
+include: 
+  - .htaccess
+exclude: 
+  - "*.less"
+  - "*.sublime-project"
+  - "*.sublime-workspace"
+  - .asset-cache
+  - .bundle
+  - .jekyll-assets-cache
   - .sass-cache
-  - Gemfile.lock
-
-# Sass conversion configs
-sass:
-  sass_dir: assets/css/_sass
-  style: :compressed
-
-gems:
-  - jekyll-paginate
-  - jekyll-sitemap
+  - CHANGELOG
+  - Capfile
+  - Gemfile
+  - Gruntfile.js
+  - LICENSE
+  - README
+  - Rakefile
+  - config
+  - gulpfile.js
+  - lib
+  - log
+  - node_modules
+  - package.json
+  - spec
+  - tmp

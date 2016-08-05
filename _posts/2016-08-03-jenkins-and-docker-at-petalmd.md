@@ -1,6 +1,7 @@
 ---
 layout: post
 title: CI / CD stack at PetalMD for web applications
+date: 2016-08-03 22:33:29.000000000 -05:00
 ---
 
 ## Context
