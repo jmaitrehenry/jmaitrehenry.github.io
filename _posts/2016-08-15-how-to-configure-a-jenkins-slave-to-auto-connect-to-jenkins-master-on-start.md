@@ -14,7 +14,9 @@ The purpose of the article is to give a quick overview of how to install a Jenki
 - When it has more slaves than running + pending jobs, it needs to remove sleeping slaves
 
 ## Implementation
+
 ### Jenkins master
+
 #### Install and configure Jenkins
 Create a new EC2 instance with the `Amazon Linux AMI 2016.03` AMI.
 For the following instruction, you can prefix them with `sudo` or become `root` (`sudo su -` or `sudo -i` as you wish).
