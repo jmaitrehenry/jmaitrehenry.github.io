@@ -7,7 +7,7 @@ date: 2016-08-04 22:33:29.000000000 -05:00
 ## Context
 At [PetalMD](https://petalmd.com) we build cloud applications for Healthcare professionals. We have a back-end running Ruby on Rails (API / admin app) and front-end apps in pure JavaScript. All applications have unit/end-to-end tests and can be deployed as needed, typically several times a day.
 
-The purpose of the article is to give a quick overview of how 
+The purpose of the article is to give a quick overview of how to install a Jenkins master with spawn slaves on demand with AWS EC2
 
 ## Requirements
 - When Jenkins doesn't have enough slaves for running pending jobs, it needs to increase the number of slaves.
