@@ -57,5 +57,5 @@ For our Code Quality tools, we choose them for their simplicity of use and the i
 Codecov and Pull Approve have billing per private repository, Code Climate uses a per account pricing model.
 
 ## Next
-- [How to configure a Jenkins slave to auto connect to Jenkins master on start](/how-to-configure-a-jenkins-slave-to-auto-connect-to-jenkins-master-on-start/)
+- [How to install a Jenkins master that spawn slaves on demand with AWS EC2](/how-to-install-a-jenkins-master-that-spawn-slaves-on-demand-with-aws-ec2)
 - How to configure our first jobs with Pipeline and Docker
