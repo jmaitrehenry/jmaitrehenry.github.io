@@ -32,6 +32,7 @@ $ curl -G 'http://localhost:8086/query' --data-urlencode "q=CREATE DATABASE cadv
 
 ### Create a retention policy
 Now we need to set a retention policy, by default it's an infinite retention
+
 ```
 $ curl -G 'http://localhost:8086/query' --data-urlencode "q=\
     CREATE RETENTION POLICY cadvisor\
@@ -68,7 +69,7 @@ $ cd statsd
 $ npm install statsd-zabbix-backend
 ```
 
-```
+``` jsonnet
 {
   port: 8125,
   percentThresold: [95, 99],
