@@ -100,41 +100,7 @@ curl -L https://github.com/docker/compose/releases/download/1.6.2/docker-compose
 chmod +x /usr/local/bin/docker-compose
 ```
 
-#### Add a script that will connect the slave to Jenkins master
-Create a new file `/usr/bin/userdata` with the following content:
-
-``` python
-#!/usr/bin/python
-import os
-import httplib
-import string
-
-conn = httplib.HTTPConnection("169.254.169.254")
-conn.request("GET", "/latest/user-data")
-response = conn.getresponse()
-userdata = response.read()
-
-args = string.split(userdata, "&")
-jenkinsUrl = ""
-slaveName = ""
-
-for arg in args:
-    if arg.split("=")[0] == "JENKINS_URL":
-        jenkinsUrl = arg.split("=")[1]
-    if arg.split("=")[0] == "SLAVE_NAME":
-        slaveName = arg.split("=")[1]
-
-os.system("wget --http-user=JENKINS_USER --http-password=JENKINS_USER_TOKEN " + jenkinsUrl + "jnlpJars/slave.jar -O slave.jar")
-os.system("java -jar slave.jar -jnlpCredentials JENKINS_USER: JENKINS_USER_TOKEN -jnlpUrl " + jenkinsUrl + "computer/" + slaveName + "/slave-agent.jnlp")
-```
-Replace `JENKINS_USER ` and `JENKINS_USER_TOKEN ` with your Jenkins user and token.
-
-#### And run it on boot
-Add a new line at the end of `rc.local` with:
-
-```
-python /usr/bin/userdata
-```
+That's all!
 
 #### Create the AMI on AWS
 On your EC2 panels > Instances, click on your Jenkins slave instance you just configure, and create a new image:
